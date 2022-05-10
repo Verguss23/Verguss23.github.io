@@ -1,0 +1,108 @@
+/* A la cabecera y al cuerpo se le ha puesto una altura de 100% y un tamaño de fuente de 1rem,
+equivalente a 16px */
+
+html,
+body {
+    height: 100%; 
+    font-size: 1rem;
+}
+
+/*Para poder asignar un fondo al elemento header, se ha creado una clase denominada gradient,
+y dentro de esa misma clase se le ha puesto un color rojo y azul en el fondo*/
+
+.gradient {
+    background: rgb(255,5,5);
+background: linear-gradient(90deg, rgba(255,5,5,1) 0%, rgba(34,74,212,1) 24%);
+}
+
+/*Para poder modificar la letra de dicho elemento header, se ha asignado una clase denominada page-header,
+modificando su margen superior, su tamaño de letra, su color y su tipo de letra*/
+
+.page-header {
+    margin-top: 4rem;
+    font-size: 1.25rem;
+    color: white;
+    font-family: times;
+}
+
+/*En la clase feature, le cambio el color de letra a color blanco para que se pueda ver el texto mejor */
+
+.feature {
+    color: white;
+}
+
+/*En la clase feature, para la lista del elemento ul, se mueve a la izquierda unis 2 rem, y no se pone
+ningún estilo de lista */
+
+.feature ul {
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+/* Dentro del elemento ul se asigna en el elemento li algo similar al anterior, pero añadiéndole
+una imagen de fondo */
+
+.feature ul li {
+    padding-left: 2rem;
+    background-image: url(../Imágenes/check.svg);
+    background-repeat: no-repeat;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* En esta clase icon, se está modificando el logo que aparece en los textos 
+de los títulos académicos */
+
+.icon {
+    color: white;
+    height: 5rem;
+    width: 5rem;
+    font-size: 1.75rem;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Se modifica el pie de página footer, poniendo un color blanco en los textos 
+y modificando su margen a 0 y su padding a 1rem, así como su tamaño de fuente */
+
+footer {
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+/* Y en el link de la página, le pongo un color blanco en los textos, 
+acompañado de ninguna decoración en los textos */
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Para que se puedan alinear los logos y sus textos perfectamente, les muevo
+el margen a la derecha para que queden lo más alineados posibles */
+
+#logo {
+    margin-left: 135px;
+}
+
+#logo2 {
+    margin-left: 250px;
+}
+
+#texto {
+    margin-left: 115px;
+}
+
+/* Al igual que en las anteriores líneas, se intenta bajar un poco el logo de W3Schools
+gracias al elemento margin-top */
+
+#w3 {
+    margin-top: 75px;
+}
+
+
+
